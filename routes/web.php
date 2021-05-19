@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect()->route('movies.index');
+    // return redirect()->route('movies.index');
+    return view('welcome');
 });
 
 Route::resource('movies', 'MovieController');
