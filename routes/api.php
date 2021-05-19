@@ -18,4 +18,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/movies', 'Api\MovieController@getAll');
+Route::namespace('Api')->group(function(){
+    
+    Route::get('/movies', 'MovieController@getAll');
+    
+    Route::get('/movies/{movie}', 'MovieController@show');
+
+});
