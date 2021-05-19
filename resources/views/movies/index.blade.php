@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('pageTitle')
-	Lista dei nostri film
+	Lista dei film
 @endsection
 
 @section('content')
